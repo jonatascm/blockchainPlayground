@@ -1,4 +1,3 @@
-/* eslint-disable-next-line */
 import { SampleToken, SampleToken__factory } from "../typechain";
 
 import { ethers } from "hardhat";
@@ -10,7 +9,6 @@ chai.use(solidity);
 const { expect } = chai;
 
 describe("SampleToken", function () {
-  /* eslint-disable-next-line */
   let SampleToken: SampleToken__factory;
   let sampleToken: SampleToken;
   let owner: SignerWithAddress;
