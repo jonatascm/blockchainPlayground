@@ -9,7 +9,7 @@ contract ERC20Token is ERC20 {
 
     constructor(uint256 initialSupply) ERC20("ERC20 Token", "E2T") {
         admin = msg.sender;
-        _mint(msg.sender, initialSupply * 10**18);
+        _mint(msg.sender, initialSupply);
     }
 
     function mint(address to, uint256 amount) external {

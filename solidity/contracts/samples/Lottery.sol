@@ -7,6 +7,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "hardhat/console.sol";
 
 contract Lottery is Ownable, VRFConsumerBase {
+    using SafeMath for uint256;
+
     address payable[] public players;
     address payable public recentWinner;
     uint256 public usdEntryFee;
